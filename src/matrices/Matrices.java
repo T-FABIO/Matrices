@@ -58,7 +58,7 @@ public class Matrices {
                     
                     break;
                 }
-
+                
                 // Pedir el contenido de la primera matriz
                 System.out.println("Ingrese los elementos de la primera matriz:");
                 for (int i = 0; i < filasm1; i++) {
@@ -76,7 +76,7 @@ public class Matrices {
                 }
 
                 //Lugar en donde se almacena el resultado
-                int[][] producto = new int[matrizB.length][matrizB[0].length];
+                int[][] producto = new int[matrizA.length][matrizB[0].length];
 
                 // Necesitamos hacer esto por cada columna de la segunda matriz (B)
                 for (int a = 0; a < matrizB[0].length; a++) {
@@ -95,15 +95,21 @@ public class Matrices {
 
                 // Recorrer producto
                 System.out.print("Imprimiendo producto\n");
-                for (int i = 0; i < matrizB.length; i++) {
+                for (int i = 0; i < matrizA.length; i++) {
                     for (int j = 0; j < matrizB[0].length; j++) {
                         System.out.printf("%d ", producto[i][j]);
                     }
                     System.out.print("\n");
                 }
                 
+                
+                
                 break;
+                
         }
+        
+        
+        
     }
     
 }
