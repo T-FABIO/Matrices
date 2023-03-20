@@ -1,11 +1,21 @@
-package Operaciones;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package matrices;
 
 import java.util.Scanner;
 
-public class Main {
+/**
+ *
+ * @author USUARIO
+ */
+public class Matrices {
 
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        
         Scanner input = new Scanner(System.in);
         
         
@@ -24,37 +34,43 @@ public class Main {
                 break;
             case 3:
                 
+                System.out.println("\n-----/-----/-----/-----/-----/-----\n");
+                
                 // Pedir el tamaño de las matrices
-                System.out.print("Ingrese el numero de filas de las matrices: ");
-                int filas = input.nextInt();
-                System.out.print("Ingrese el numero de columnas de las matrices: ");
-                int columnas = input.nextInt();
+                System.out.print("Ingrese el numero de filas de la primera matriz: ");
+                int filasm1 = input.nextInt();
+                System.out.print("Ingrese el numero de columnas de la primera matriz: ");
+                int columnasm1 = input.nextInt();
+                
+                System.out.print("Ingrese el numero de filas de la segunda matriz: ");
+                int filasm2 = input.nextInt();
+                System.out.print("Ingrese el numero de columnas de la tercera matriz: ");
+                int columnasm2 = input.nextInt();
                 
 
                 // Crear las matrices
-                int[][] matrizA = new int[filas][columnas];
-                int[][] matrizB = new int[filas][columnas];
+                int[][] matrizA = new int[filasm1][columnasm1];
+                int[][] matrizB = new int[filasm2][columnasm2];
                 
                 //verificar si se puede multiplicar las matrices
-                if(matrizA.length == matrizB[0].length){
-                    System.out.println("El numero de filas de la primera matriz no coinciden "
-                            + "con el numero de columnas de las egunda matriz");
+                if(matrizA[0].length != matrizB.length){
+                    System.out.println("\n!El numero de filas de la primera matriz no coinciden con el numero de columnas de las egunda matriz!\n");
                     
                     break;
                 }
 
                 // Pedir el contenido de la primera matriz
                 System.out.println("Ingrese los elementos de la primera matriz:");
-                for (int i = 0; i < filas; i++) {
-                    for (int j = 0; j < columnas; j++) {
+                for (int i = 0; i < filasm1; i++) {
+                    for (int j = 0; j < columnasm1; j++) {
                         matrizA[i][j] = input.nextInt();
                     }
                 }
 
                 // Pedir el contenido de la segunda matriz
                 System.out.println("Ingrese los elementos de la segunda matriz:");
-                for (int i = 0; i < filas; i++) {
-                    for (int j = 0; j < columnas; j++) {
+                for (int i = 0; i < filasm2; i++) {
+                    for (int j = 0; j < columnasm2; j++) {
                         matrizB[i][j] = input.nextInt();
                     }
                 }
@@ -88,15 +104,6 @@ public class Main {
                 
                 break;
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     }
+    
 }
