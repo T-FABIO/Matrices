@@ -27,7 +27,9 @@ public class Matrices {
         switch(menu){
             
             case 1: 
-                System.out.println("suma");
+                
+                
+                
                 break;
             case 2:
                 System.out.println("resta");
@@ -47,6 +49,7 @@ public class Matrices {
                 System.out.print("Ingrese el numero de columnas de la tercera matriz: ");
                 int columnasm2 = input.nextInt();
                 
+               
 
                 // Crear las matrices
                 int[][] matrizA = new int[filasm1][columnasm1];
