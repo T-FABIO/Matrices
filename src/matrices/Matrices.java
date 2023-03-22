@@ -1,20 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package matrices;
 import Operaciones.Multiplicacion;
 import java.util.Scanner;
 
-/**
- *
- * @author USUARIO
- */
 public class Matrices {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -27,10 +16,12 @@ public class Matrices {
 
             case 1:
                 System.out.println("suma");
-                break;
+            break;
+            
             case 2:
                 System.out.println("resta");
-                break;
+            break;
+            
             case 3:
 
                 System.out.println("\n-----/-----/-----/-----/-----/-----\n");
@@ -85,7 +76,7 @@ public class Matrices {
                     System.out.print("\n");
                 }
 
-                break;
+            break;
         }
     }
 
