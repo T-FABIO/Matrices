@@ -34,6 +34,7 @@ public class Suma {
             for (int j = 0; j < columnas; j++) {
                 matrizA[i][j] = pm.nextInt();
             }
+            System.out.println("\n");
         }
 
         // Pedir el contenido de la segunda matriz
