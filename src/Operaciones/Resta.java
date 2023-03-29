@@ -2,7 +2,7 @@ package Operaciones;
 
 import java.util.Scanner;
 
-public class Suma {
+public class Resta {
 
     int[][] matrizA;
     int[][] matrizB;
@@ -21,7 +21,7 @@ public class Suma {
 
         //verificar si se pueden sumar las matrices
         if (filas != columnas) {
-            System.out.println("las matrices no se pueden sumar");
+            System.out.println("las matrices no se pueden restar");
         } else {
             matrizA = new int[filas][columnas];
             matrizB = new int[filas][columnas];
@@ -55,7 +55,7 @@ public class Suma {
 
         for (int i = 0; i < filas; i++) {
             for (int j = 0; j < columnas; j++) {
-                matrizR[i][j] = matrizA[i][j] + matrizB[i][j];
+                matrizR[i][j] = matrizA[i][j] - matrizB[i][j];
             }
         }
    

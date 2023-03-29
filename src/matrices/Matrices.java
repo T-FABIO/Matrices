@@ -1,5 +1,7 @@
 package matrices;
 import Operaciones.Multiplicacion;
+import Operaciones.Resta;
+import Operaciones.Suma;
 import java.util.Scanner;
 
 public class Matrices {
@@ -16,10 +18,20 @@ public class Matrices {
 
             case 1:
                 System.out.println("suma");
+                Suma suma = new Suma();
+                suma.pedirMatriz();
+                suma.sumaMatrices();
+                suma.imprimirResultado();
+                
+                     
             break;
             
             case 2:
                 System.out.println("resta");
+                Resta resta = new Resta();
+                resta.pedirMatriz();
+                resta.sumaMatrices();
+                resta.imprimirResultado();
             break;
             
             case 3:
@@ -65,8 +77,8 @@ public class Matrices {
                 }
 
                 Multiplicacion multiplicacion = new Multiplicacion();
+                
                 // Recorrer producto
-
                 System.out.print("Imprimiendo producto\n");
 
                 for (int i = 0; i < matrizB.length; i++) {
